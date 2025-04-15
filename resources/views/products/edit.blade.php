@@ -7,8 +7,8 @@
 <script>
     $(function() {
         var hide = [
-            @foreach($products as $product)
-            "{{ $product->datum }}",
+            @foreach($products as $p)
+            "{{ $p->datum }}",
             @endforeach
         ];
         $("#datum").datepicker({
